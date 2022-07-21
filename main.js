@@ -34,14 +34,14 @@ let p = "I love to learn JavaScript";
 // console.warn("This is a warning")
 
 let fruits = ["Apples", "Oranges", "Grapes"]
-fruits.push("Banana")
-fruits.push("Strawberry")
-fruits.pop()
-fruits.shift()
-fruits.unshift("Guava")
+fruits.push("Banana") //Adds a new item from the right hand side of the fruits array
+fruits.push("Strawberry") //Adds a new item from the right hand side of the fruits array
+fruits.pop() //Removes an item from right hand side the fruits array
+fruits.shift() //Removes an item from left hand side of the fruits array
+fruits.unshift("Guava") // Adds a new item from the left hand side of the fruits array
 // fruits[4] = "Mango"
-fruits.push("Mango")
-// console.log(fruits);
+// fruits.push("Mango")
+console.log(fruits);
 
 const person = {
     name: "Chidu",
@@ -59,7 +59,6 @@ const person = {
 console.log(person)
 
 
-prompt("This is a prompt")
 
 
 

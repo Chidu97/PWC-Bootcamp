@@ -1,67 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-</head>
-<body>
+<html lang=“en”>
+  <head>
+    <meta charset=“UTF-8" />
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0" />
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge” />
+    <title>Interactive website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Interactive website</h1>
+    </header>
 
-    <ul id="todos"></ul>
+    <section class=“container”>
+      <form id=“my-form”>
+        <h1>Add User</h1>
+        <div class=“msg”></div>
+        <div>
+          <label for=“name”>Name:</label>
+          <input type=“text” id=“name”>
+        </div>
+        <div>
+          <label for=“email”>Email:</label>
+          <input type=“text” id=“email”>
+        </div>
+        <input class=“btn” type=“submit” value=“Submit”>
+      </form>
 
-
-    <form>
-        <input name="todo" type="text">
-        <input type="submit" value="Add Todo">
-    </form>
-
-
-
-
-
-
-
-
-
-    <script>
-
-        // GET DOM elements
-        const form = document.querySelector('form');
-        const input = document.querySelector("[name='todo']");
-        const todoList = document.getElementById('todos')
-
-
-        // Side Effects/ Lifeecycle
-
-        const existingTodos = JSON.parse(localStorage.getItem('todos'));
-
-        const todoData = existingTodos || []
-
-        todoData.forEach(todo => {
-            addTodo(todo);
-        });
-
-        // const todoData = []
-
-        function addTodo(todoText){
-            todoData.push(todoText);
-            const li = document.createElement('li')
-            li.innerHTML = todoText;
-            todoList.appendChild(li);
-            localStorage.setItem('todos', JSON.stringify(todoData));
-        }
-
-        // Events
-
-        form.onsubmit = (event) => {
-            event.preventDefault();
-            addTodo(input.value);
-        }
-
-
-
-    </script>
-    
-</body>
+      <ul id=“users”></ul>
+      <ul class=“items”>
+        <li class=“item”>Item 1</li>
+        <li class=“item”>Item 2</li>
+        <li class=“item”>Item 3</li>
+      </ul>
+    </section>
+    <script src='script.js'></script>
+  </body>
 </html>

@@ -1,25 +1,26 @@
-// for(let i=0; i<0; i++){
-//     console.log(i);
-// }
+for(let i=0; i<0; i++){
+    console.log(i);
+}
 
-// for(let p=4; p<=8; p++){
-//     console.log(p);
-// }
+for(let p=4; p<=8; p++){
+    console.log(p);
+}
 
 
-// for (let m=12; m<=19; m++){
-//     console.log(m);
-// }
+for (let m=12; m<=19; m++){
+    console.log(m);
+}
 
-// for (let i=1; i<=10; i++){
-//     console.log(`number is ${i}`);
-// }
+for (let i=1; i<=10; i++){
+    console.log(`number is ${i}`);
+}
+
 let i = 0
 
-// while(i<=20){
-//     console.log(`The number is ${i}`)
-//     i++
-// }
+while(i<=20){
+    console.log(`The number is ${i}`)
+    i++
+}
 
 // const x = 10
 
